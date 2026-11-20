@@ -27,4 +27,3 @@ df["month"] = df["date"].dt.month
 monthly = df.groupby("month")["punctuality_rate"].mean()
 st.subheader("Punctuality rate by month (%)")
 st.bar_chart(monthly, x_label="Month (1 = January)", y_label="Punctuality rate (%)", height=450)
-Menampilkan app_old.py.
